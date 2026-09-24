@@ -1,13 +1,16 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -pedantic
-TARGET = task1
+TARGETS = task1 task2
 
 .PHONY: all clean
 
-all: $(TARGET)
+all: $(TARGETS)
 
-$(TARGET): task1.c
-	$(CC) $(CFLAGS) task1.c -o $(TARGET)
+task1: task1.c
+	$(CC) $(CFLAGS) task1.c -o task1
+
+task2: task2.c
+	$(CC) $(CFLAGS) task2.c -o task2
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGETS)
