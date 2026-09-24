@@ -31,3 +31,24 @@ Write a C program that performs temperature conversions between Fahrenheit, Cels
 The assistant implemented `task2.c`. It supports Fahrenheit, Celsius, and Kelvin conversions, validates scale choices, rejects negative Kelvin input, converts through Celsius, categorizes the result as Freezing, Cold, Comfortable, Hot, or Extreme Heat, and displays a weather advisory. The assistant interpreted the stated Hot range as 25°C to below 35°C because that matches the surrounding category descriptions. The program was compiled with strict warnings and tested at category boundaries.
 
 The assistant also updated the `Makefile` so `make all` builds both `task1` and `task2`, while `make clean` removes both executables. The complete build and cleanup process was verified successfully.
+
+## Interaction 5
+### User
+The user provided the Gen-AI Log Guide and asked the assistant to use it for the lab's AI usage log.
+
+### Assistant Summary
+The assistant created `ai_usage_log.md` with the required heading and interaction-based Markdown format. It documented the requests, implementation work, corrections, and validation steps from the conversation.
+
+## Interaction 6
+### User
+Do we need the `tasks.json` file?
+
+### Assistant Summary
+The assistant inspected `.vscode/tasks.json` and explained that it is an optional VS Code-generated build task for compiling the active file. The assistant noted that the Makefile is sufficient for building both programs with `make all` and cleaning them with `make clean`.
+
+## Interaction 7
+### User
+Can you edit the AI usage log?
+
+### Assistant Summary
+The assistant reviewed the existing log and updated it to include the later usage-log, `tasks.json`, and log-editing interactions so the document remains an honest record of the complete conversation.
