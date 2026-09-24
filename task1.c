@@ -14,10 +14,10 @@ static void find_combinations(int remaining_score, int play_index,
 			play_counts[play_index] =
 				remaining_score / scoring_plays[play_index];
 
-			printf("2-point: %d, 3-point: %d, 6-point: %d, "
-				   "7-point: %d, 8-point: %d\n",
-				   play_counts[0], play_counts[1], play_counts[2],
-				   play_counts[3], play_counts[4]);
+						printf("%d TD + 2pt, %d TD + FG, %d TD, "
+								   "%d 3pt FG, %d Safety\n",
+								   play_counts[4], play_counts[3], play_counts[2],
+								   play_counts[1], play_counts[0]);
 		}
 		return;
 	}
